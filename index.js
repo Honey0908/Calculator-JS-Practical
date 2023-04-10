@@ -500,13 +500,13 @@ function evaluateAdvanceFunction(expression) {
             return Math.exp(num).toFixed(2);
         },
         sinInv: function (num) {
-            return degMode ? Math.asin(num * Math.PI / 180).toFixed(2) : Math.sinInv(num).toFixed(2);
+            return degMode ? Math.asin(num * Math.PI / 180).toFixed(2) : Math.asin(num).toFixed(2);
         },
         cosInv: function (num) {
-            return degMode ? Math.acos(num * Math.PI / 180).toFixed(2) : Math.cosInv(num).toFixed(2);
+            return degMode ? Math.acos(num * Math.PI / 180).toFixed(2) : Math.acos(num).toFixed(2);
         },
         tanInv: function (num) {
-            return degMode ? Math.atan(num * Math.PI / 180).toFixed(2) : Math.tanInv(num).toFixed(2);
+            return degMode ? Math.atan(num * Math.PI / 180).toFixed(2) : Math.atan(num).toFixed(2);
         },
         sin: function (num) {
             return degMode ? Math.sin(num * Math.PI / 180).toFixed(2) : Math.sin(num).toFixed(2);
@@ -519,12 +519,6 @@ function evaluateAdvanceFunction(expression) {
         },
         cbrt: function (num) {
             return Math.cbrt(num);
-        },
-        deg: function (num) {
-            return foundDeg(num);
-        },
-        rad: function (num) {
-            return foundRad(num);
         }
 
     }
